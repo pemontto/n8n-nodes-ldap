@@ -13,7 +13,7 @@ import { Attribute, Change, Client, ClientOptions } from 'ldapts';
 export class Ldap implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Ldap',
-		name: 'LDAP',
+		name: 'ldap',
 		icon: 'file:ldap.svg',
 		group: ['transform'],
 		version: 1,
@@ -492,7 +492,7 @@ export class Ldap implements INodeType {
 
 		const credentials = await this.getCredentials('ldap');
 		const protocol = !credentials.secure || credentials.starttls ? 'ldap' : 'ldaps';
-		let port = !credentials.secure || credentials.starttls ? 389 : 686;
+		let port = !credentials.secure || credentials.starttls ? 389 : 636;
 		port = credentials.port ? (credentials.port as number) : port;
 		const url = `${protocol}://${credentials.hostname}:${port}`;
 		const bindDN = credentials.bindDN as string;
