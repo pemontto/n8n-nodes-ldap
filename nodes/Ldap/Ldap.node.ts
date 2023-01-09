@@ -13,7 +13,8 @@ import { Attribute, Change, Client, ClientOptions } from 'ldapts';
 export class Ldap implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Ldap',
-		name: 'ldap',
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-name-miscased
+		name: 'LDAP',
 		icon: 'file:ldap.svg',
 		group: ['transform'],
 		version: 1,

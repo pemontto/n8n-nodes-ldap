@@ -6,12 +6,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://www.npmjs.com/package/ldapts#authenticate-example"
+				"url": "https://www.npmjs.com/package/n8n-nodes-ldap#credentials"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://www.npmjs.com/package/ldapts"
+				"url": "https://www.npmjs.com/package/n8n-nodes-ldap#operations"
 			}
 		]
 	}
